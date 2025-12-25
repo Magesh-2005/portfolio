@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for FontAwesome, might need a real link or SVG icons -->
+    <!-- Using a reliable CDN for FontAwesome Free or simpler: SVGs. I will stick to SVGs for reliability in the code or a known generic CDN if this one fails. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="logo">Dev<span class="neon-dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="text-container">
+                <h2 class="greeting">Hello, I'm</h2>
+                <h1 class="name glow-text">Magesh K <span class="highlight"></span></h1>
+                <h3 class="role">I am a <span class="typewriter"
+                        data-text='["Web Developer", "Data Analyst", "AI/ML Engineer"]'></span><span
+                        class="cursor">|</span></h3>
+                <a href="assets/resume/Magesh_K_Resume.pdf" download="Magesh_K_Resume.pdf" class="btn-3d download-cv">
+                    <span>Download Resume</span>
+                </a>
+            </div>
+            <div class="image-container">
+                <div class="profile-glow">
+                    <img src="profile_pic.png" alt="Profile" class="profile-pic">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="section skills-section">
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java skill-icon" style="color: #007396;"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react skill-icon" style="color: #61dafb;"></i>
+                <p>React</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain skill-icon" style="color: #bc13fe;"></i>
+                <p>AI & Deep Learning</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-robot skill-icon" style="color: #00e676;"></i>
+                <p>Machine Learning</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-microchip skill-icon" style="color: #ff6f00;"></i>
+                <p>TensorFlow</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-bolt skill-icon" style="color: #ff4b4b;"></i>
+                <p>Streamlit</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-leaf skill-icon" style="color: #6db33f;"></i>
+                <p>Spring Boot</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server skill-icon" style="color: #007bff;"></i>
+                <p>REST APIs</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon" style="color: #e34c26;"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon" style="color: #264de4;"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt skill-icon" style="color: #f05032;"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-github skill-icon" style="color: #ffffff;"></i>
+                <p>GitHub</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-laugh-beam skill-icon" style="color: #ffcc00;"></i>
+                <p>Hugging Face</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon" style="color: #00758f;"></i>
+                <p>MySQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <h2 class="section-title"><span class="highlight">Featured</span> Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card featured-project"
+                onclick="window.open('https://magesh200509-final-year-project-breast-cancer-detection.hf.space', '_blank')">
+                <div class="card-content">
+                    <span class="project-category">Final Year Project</span>
+                    <h3>AI Breast Cancer Detection</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">A Prompt-Guided State-Space UNet (PGSS-UNet) with
+                        MeraNet Classifier. High-accuracy segmentation & classification system with interpretability.
+                    </p>
+                    <div class="tech-stack">
+                        <span>PGSS-UNet</span>
+                        <span>MeraNet</span>
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Streamlit</span>
+                        <span>OpenCV</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="icon-btn" onclick="event.stopPropagation(); window.open('#', '_blank')"
+                            title="Private Repository"><i class="fab fa-github"></i></button>
+                        <button class="live-btn">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="window.open('https://ecommerce-chatbot-magesh.streamlit.app', '_blank')">
+                <div class="card-content">
+                    <span class="project-category">AI Chatbot</span>
+                    <h3>E-Commerce Customer Care Chatbot</h3>
+                    <p>Intelligent support chatbot automating customer queries like pricing & offers using rule-based
+                        NLP.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>NLP</span>
+                        <span>Rule-Based AI</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="icon-btn" onclick="event.stopPropagation(); window.open('#', '_blank')"><i
+                                class="fab fa-github"></i></button>
+                        <button class="live-btn">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card"
+                onclick="window.open('https://magesh-2005.github.io/tamil-festival-website', '_blank')">
+                <div class="card-content">
+                    <span class="project-category">Frontend Project</span>
+                    <h3>Tamil Festival Website</h3>
+                    <p>A responsive and culturally themed website showcasing major Tamil festivals and traditions.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive Design</span>
+                        <span>GitHub Pages</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="icon-btn" onclick="event.stopPropagation(); window.open('#', '_blank')"><i
+                                class="fab fa-github"></i></button>
+                        <button class="live-btn">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="window.open('https://certificateblockchain.streamlit.app/', '_blank')">
+                <div class="card-content">
+                    <span class="project-category">Blockchain Project</span>
+                    <h3>Blockchain-Based Digital Certificate Verification</h3>
+                    <p>A secure system for verifying digital certificates using blockchain technology.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Blockchain</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="icon-btn" onclick="event.stopPropagation(); window.open('#', '_blank')"><i
+                                class="fab fa-github"></i></button>
+                        <button class="live-btn">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" onclick="window.open('https://land-home-sale-project.onrender.com/', '_blank')">
+                <div class="card-content">
+                    <span class="project-category">Backend Project</span>
+                    <h3>Land and Home Selling Marketplace</h3>
+                    <p>A full-featured marketplace for buying and selling real estate properties.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>CRUD</span>
+                        <span>SQL</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="icon-btn" onclick="event.stopPropagation(); window.open('#', '_blank')"><i
+                                class="fab fa-github"></i></button>
+                        <button class="live-btn">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card"
+                onclick="window.open('https://github.com/Magesh-2005/C2TC_Sprint2_Project', '_blank')">
+                <div class="card-content">
+                    <span class="project-category">Full Stack Project</span>
+                    <h3>Shopping Mall Admin Service</h3>
+                    <p>Administrative service for managing shopping mall operations including CRUD functionalities.</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>React</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="icon-btn"
+                            onclick="event.stopPropagation(); window.open('https://github.com/Magesh-2005/C2TC_Sprint2_Project', '_blank')"><i
+                                class="fab fa-github"></i></button>
+                        <button class="live-btn">View Repo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:hackmagesh1@gmail.com">hackmagesh1@gmail.com</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+918148619355">+91 8148619355</a>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Chennai, Tamil Nadu</span>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea required></textarea>
+                    <label>Message</label>
+                </div>
+                <button type="submit" class="btn-3d submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/Magesh-2005" target="_blank" class="social-icon"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/magesh2005" target="_blank" class="social-icon"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Magesh K. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Vanilla Tilt JS for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
