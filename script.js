@@ -245,3 +245,35 @@ if (contactForm) {
         }, 1500);
     });
 }
+
+// Project Filtering
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+if (filterBtns.length > 0 && projectCards.length > 0) {
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all
+            filterBtns.forEach(b => {
+                b.classList.remove('active');
+                b.style.borderColor = '';
+                b.style.boxShadow = '';
+            });
+            
+            // Add styling to clicked
+            btn.classList.add('active');
+            btn.style.borderColor = '#00f3ff';
+            btn.style.boxShadow = '0 0 10px #00f3ff';
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+}
